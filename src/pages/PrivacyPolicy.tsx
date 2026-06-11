@@ -15,7 +15,7 @@ const sections = [
     content: (
       <>
         <p className="text-white/50 text-sm leading-relaxed mb-4">
-          MANAVOLA, plateforme d'échange de cryptomonnaies en Ariary malgache, est le responsable du traitement de vos données personnelles.
+          MANAVOLA, plateforme d'échange de cryptomonnaies en Ariary Malagasy, est le responsable du traitement de vos données personnelles.
         </p>
         <div className="glass-card border border-violet-500/20 p-4 rounded-xl space-y-2">
           <p className="text-xs font-semibold text-white/30 uppercase tracking-wider mb-3">Coordonnées du responsable</p>

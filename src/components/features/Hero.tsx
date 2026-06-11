@@ -91,7 +91,7 @@ export default function Hero() {
             {/* Premium Download CTA */}
             <div className="animate-on-scroll flex justify-center">
               <a
-                href="https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/download/1.0/ManavolApp.apk"
+                href="https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/download/1.0/Manavola_App.2.apk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-3 px-7 py-4 rounded-2xl font-bold text-white text-base overflow-hidden shadow-[0_0_40px_rgba(99,102,241,0.35)] hover:shadow-[0_0_60px_rgba(99,102,241,0.55)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] focus:outline-none"

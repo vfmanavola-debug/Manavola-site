@@ -70,7 +70,7 @@ const products = [
     ],
     cta: "Télécharger l'App",
     badge: "Mobile",
-    href: "https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/download/1.0/ManavolApp.apk",
+    href: "https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/download/1.0/Manavola_App.2.apk",
   },
 ];
 
