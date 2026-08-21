@@ -27,7 +27,7 @@ const ctaOptions = [
     color: "text-purple-400",
     bg: "hover:bg-purple-500/10",
     border: "border-purple-500/20",
-    href: "https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/download/1.0/Manavola_App.2.apk",
+    href:"https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/latest/download/manavola.apk",
   },
 ];
 
