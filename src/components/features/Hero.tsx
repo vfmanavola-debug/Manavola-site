@@ -110,7 +110,7 @@ export default function Hero() {
 
                 {/* Text */}
                 <span className="relative flex flex-col items-start">
-                  <span className="text-white/70 text-[11px] font-semibold uppercase tracking-widest leading-none mb-0.5">Télécharger maintenant</span>
+                  <span className="text-white/70 text-[11px] font-semibold uppercase tracking-widest leading-none mb-0.5">Version 2.0.2</span>
                   <span className="text-white text-lg font-bold leading-tight">Manavola App</span>
                 </span>
 
