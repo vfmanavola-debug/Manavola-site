@@ -70,8 +70,7 @@ const products = [
     ],
     cta: "Télécharger l'App",
     badge: "Mobile",
-    href: "https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/latest/download/manavola.apk",
-  },
+    href: "https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/latest/download/manavola.apk",  },
 ];
 
 export default function Products() {

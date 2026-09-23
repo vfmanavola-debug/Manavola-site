@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { Menu, X, BookOpen } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
@@ -11,6 +12,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -62,6 +64,13 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
+            <button
+              onClick={() => navigate("/guide")}
+              className="flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-white/60 hover:text-white rounded-lg hover:bg-white/[0.06] transition-all duration-200"
+            >
+              <BookOpen className="w-4 h-4" />
+              Guide
+            </button>
             <button onClick={() => handleNav("#produits")} className="btn-primary text-sm px-5 py-2.5">
               Commencer maintenant
             </button>
@@ -91,6 +100,13 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
+            <button
+              onClick={() => { setIsOpen(false); navigate("/guide"); }}
+              className="w-full flex items-center gap-2 text-left px-4 py-3 text-sm font-medium text-white/60 hover:text-white hover:bg-white/[0.06] rounded-lg transition-all"
+            >
+              <BookOpen className="w-4 h-4" />
+              Guide
+            </button>
             <div className="pt-2 mt-2 border-t border-white/[0.07]">
               <button onClick={() => handleNav("#produits")} className="btn-primary w-full text-sm py-3">
                 Commencer maintenant
