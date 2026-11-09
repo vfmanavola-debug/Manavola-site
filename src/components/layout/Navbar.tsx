@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Menu, X, BookOpen } from "lucide-react";
+import { Menu, X, BookOpen, LogIn } from "lucide-react";
+import { APP_WEB_LOGIN_URL } from "@/lib/links";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
@@ -71,6 +72,13 @@ export default function Navbar() {
               <BookOpen className="w-4 h-4" />
               Guide
             </button>
+            <a
+              href={APP_WEB_LOGIN_URL}
+              className="flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-white/80 hover:text-white rounded-lg border border-white/[0.14] hover:bg-white/[0.06] transition-all duration-200"
+            >
+              <LogIn className="w-4 h-4" />
+              Se connecter
+            </a>
             <button onClick={() => handleNav("#produits")} className="btn-primary text-sm px-5 py-2.5">
               Commencer maintenant
             </button>
@@ -107,6 +115,13 @@ export default function Navbar() {
               <BookOpen className="w-4 h-4" />
               Guide
             </button>
+            <a
+              href={APP_WEB_LOGIN_URL}
+              className="w-full flex items-center gap-2 text-left px-4 py-3 text-sm font-medium text-white/80 hover:text-white hover:bg-white/[0.06] rounded-lg transition-all"
+            >
+              <LogIn className="w-4 h-4" />
+              Se connecter
+            </a>
             <div className="pt-2 mt-2 border-t border-white/[0.07]">
               <button onClick={() => handleNav("#produits")} className="btn-primary w-full text-sm py-3">
                 Commencer maintenant

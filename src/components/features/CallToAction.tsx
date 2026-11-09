@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { ArrowRight, MessageCircle, Globe, Smartphone } from "lucide-react";
+import { APK_URL, APP_WEB_LOGIN_URL } from "@/lib/links";
 
 const ctaOptions = [
   {
@@ -27,7 +28,7 @@ const ctaOptions = [
     color: "text-purple-400",
     bg: "hover:bg-purple-500/10",
     border: "border-purple-500/20",
-    href:"https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/latest/download/manavola.apk",
+    href: APK_URL,
   },
 ];
 
@@ -103,10 +104,10 @@ export default function CallToAction() {
           </div>
 
           <div className="animate-on-scroll flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="btn-primary flex items-center gap-2 text-base px-8 py-3.5">
+            <a href={APP_WEB_LOGIN_URL} className="btn-primary flex items-center gap-2 text-base px-8 py-3.5">
               Créer mon compte gratuitement
               <ArrowRight className="w-4 h-4" />
-            </button>
+            </a>
 
           </div>
         </div>

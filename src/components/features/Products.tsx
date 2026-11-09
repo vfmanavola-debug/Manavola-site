@@ -3,6 +3,7 @@ import { MessageCircle, Globe, Smartphone, ArrowRight, Check } from "lucide-reac
 import productMessenger from "@/assets/product-messenger-v2.jpg";
 import productChathub from "@/assets/product-chathub-v2.jpg";
 import productApp from "@/assets/product-app-v2.jpg";
+import { APK_URL } from "@/lib/links";
 
 const products = [
   {
@@ -70,7 +71,7 @@ const products = [
     ],
     cta: "Télécharger l'App",
     badge: "Mobile",
-    href: "https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/latest/download/manavola.apk",  },
+    href: APK_URL,  },
 ];
 
 export default function Products() {

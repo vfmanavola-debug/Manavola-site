@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
-import { ChevronDown, TrendingUp, Shield, Zap, Download } from "lucide-react";
+import { ChevronDown, TrendingUp, Shield, Zap, Download, Globe } from "lucide-react";
+import { APK_URL, APP_WEB_URL } from "@/lib/links";
 const badges = [
   { icon: Shield, label: "100% Sécurisé", color: "text-green-400" },
   { icon: TrendingUp, label: "Meilleur taux", color: "text-violet-400" },
@@ -55,7 +56,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-36">
         <div className="max-w-3xl mx-auto text-center">
           <div>
             {/* Headline */}
@@ -88,13 +89,13 @@ export default function Hero() {
               ))}
             </div>
 
-            {/* Premium Download CTA */}
-            <div className="animate-on-scroll flex justify-center">
+            {/* Premium Download CTA + version navigateur */}
+            <div className="animate-on-scroll flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                  href="https://github.com/vfmanavola-debug/fichier-App-Manavola/releases/latest/download/manavola.apk"
+                href={APK_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center gap-3 px-7 py-4 rounded-2xl font-bold text-white text-base overflow-hidden shadow-[0_0_40px_rgba(99,102,241,0.35)] hover:shadow-[0_0_60px_rgba(99,102,241,0.55)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] focus:outline-none"
+                className="group relative inline-flex w-full max-w-sm sm:w-auto items-center gap-3 px-7 py-4 rounded-2xl font-bold text-white text-base overflow-hidden shadow-[0_0_40px_rgba(99,102,241,0.35)] hover:shadow-[0_0_60px_rgba(99,102,241,0.55)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] focus:outline-none"
                 style={{ background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%)" }}
               >
                 {/* Shimmer overlay */}
@@ -117,6 +118,20 @@ export default function Hero() {
                 {/* Arrow */}
                 <span className="relative ml-1">
                   <Download className="w-5 h-5 text-white/80 group-hover:text-white group-hover:translate-y-0.5 transition-all duration-300" />
+                </span>
+              </a>
+
+              {/* Version navigateur (iPhone, ordinateur, Android sans installation) */}
+              <a
+                href={APP_WEB_URL}
+                className="group relative inline-flex w-full max-w-sm sm:w-auto items-center gap-3 px-7 py-4 rounded-2xl font-bold text-white text-base bg-white/[0.06] border border-white/[0.14] hover:bg-white/[0.10] hover:border-violet-400/50 transition-all duration-300 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
+              >
+                <span className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-white/10 group-hover:bg-white/15 transition-colors duration-300">
+                  <Globe className="w-5 h-5 text-white" />
+                </span>
+                <span className="relative flex flex-col items-start">
+                  <span className="text-white/60 text-[11px] font-semibold uppercase tracking-widest leading-none mb-0.5">iPhone · Ordinateur</span>
+                  <span className="text-white text-lg font-bold leading-tight">Utiliser sur le navigateur</span>
                 </span>
               </a>
             </div>
